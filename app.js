@@ -22,7 +22,8 @@ var storage = multer.diskStorage({
 
 var upload = multer({storage: storage}).single("file");
    
-mongoose.connect("mongodb://localhost/vietnam");
+//mongoose.connect("mongodb://localhost/vietnam");
+mongoose.connect("mongodb://Vietnam:password@ds235840.mlab.com:35840/vietnam-restaurant");
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public")); //lets us use main.css in public dir
