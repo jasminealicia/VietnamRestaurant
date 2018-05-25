@@ -22,6 +22,7 @@ var storage = multer.diskStorage({
 
 var upload = multer({storage: storage}).single("file");
 
+//connecting the database to the developing (C9) environment and deployed (Heroku) environment
 var url = process.env.DATABASEURL || "mongodb://localhost/vietnam";
 mongoose.connect(url); //in console: export DATABASEURL=mongodb://localhost/vietnam
 
