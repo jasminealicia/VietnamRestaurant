@@ -22,7 +22,8 @@ var storage = multer.diskStorage({
 
 var upload = multer({storage: storage}).single("file");
 
-mongoose.connect(process.env.DATABASEURL); //in console: export DATABASEURL=mongodb://localhost/vietnam
+var url = process.env.DATABASEURL || "mongodb://localhost/vietnam";
+mongoose.connect(url); //in console: export DATABASEURL=mongodb://localhost/vietnam
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
