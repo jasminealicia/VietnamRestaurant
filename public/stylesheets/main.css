@@ -1,0 +1,155 @@
+/* --- NAVBAR AND LOGO STYLING --- */
+#logo {
+    vertical-align: top;
+    margin-top: 165px;
+    height: 300px;
+    padding-left: 100px;
+}
+
+.navbar {
+    max-height: 50px;
+    margin: 0 !important;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-family: Nova Round;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-right: 30px;
+}
+
+
+.navbar .navbar-nav .dropdown .nav-link {
+    font-family: Nova Round;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-right: 30px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #CDB360;
+    transition: ease-in 0.2s;
+}
+
+.navbar .navbar-nav .dropdown .nav-link:hover {
+    color: #CDB360;
+    transition: ease-in 0.2s;
+}
+
+.bg-company-black {
+    background-color: #232328;
+    padding: 3px;
+}
+
+/* --- PARALLAX STYLING ---*/
+
+.parallax-window {
+    min-height: 580px;
+    background: transparent;
+}
+
+.window-strip {
+    height: 300px;
+    background-color: #232328;
+}
+
+.window-block {
+    min-height: 300px;
+    background-color: #232328;
+}
+
+.window-container {
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 40px;
+}
+
+.window-title {
+    color: #CDB360;
+    font-family: Nova Round;
+    font-size: 40px;
+}
+
+.window-container .btn-tan {
+    background-color: #CDB360;
+    margin-top: 25px;
+    color: #000;
+}
+
+.window-container .link {
+    color: #FFFFFF;
+    text-decoration: none;
+    float: right;
+}
+
+.fa-facebook-square {
+   font-size: 40px;
+}
+
+.fa-yelp {
+    font-size: 40px;
+    margin-right: 25px;
+}
+
+/*--- GALLERY STYLING--- */
+#desc {
+    color: #000;
+}
+
+/* --- MENU AND CONTACT PAGE STYLING --- */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 40px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+hr {
+    background-color: #FFFFFF;
+    width: 15%;
+    margin-left: 0;
+    margin-bottom: 15px;
+    border: none;
+    height: 1px; 
+}
+
+/* --- NEW STYLING --*/
+.divider {
+    margin-top: 40px;
+}
+
+#review {
+    text-align: center;
+    margin-top: 35px;
+}
+
+#review-form {
+    width: 30%;
+    margin: 35px auto;
+}
+
+#image {
+    text-align: center;
+    margin-top: 35px;
+}
+
+#image-form {
+    width: 30%;
+    margin: 35px auto;
+}
+
+/*--- REVIEWS PAGE STYLING ---*/
+.fa-quote-left {
+    margin-right: 15px;
+}
+
+.fa-quote-right {
+    margin-left: 15px;
+}
+
