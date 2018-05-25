@@ -1,0 +1,23 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <h1 id="image">Add a picture of your yummy food!</h1>
+    <div class="row">
+        <div id="image-form">
+            <form action="/gallery" enctype="multipart/form-data" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="file" id="file" name="file" accept=".png, .jpg, .jpeg" placeholder="image">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="description" placeholder="e.g. Chicken fried rice">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-secondary btn-block">Submit</button>
+                </div>
+                <a href="/gallery">Go Back</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<% include ../partials/footer %>

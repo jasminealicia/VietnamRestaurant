@@ -1,0 +1,22 @@
+<% include ../partials/header %>
+
+<div class="parallax-window" data-parallax="scroll" data-image-src="https://travelservices.agency/wp-content/uploads/2017/07/Banh-mi-Vietnam-_Vietnamese-sandwich_-1.jpg"></div>
+<div class="window-block">
+    <div class="window-container">
+        <h1 class="window-title"> Our Reviews </h1>
+        <p>
+            <a class="btn btn-large btn-tan" href="/reviews/new">Add your Review!</a>
+        </p>
+        <div class="divider">
+            <% reviews.forEach(function(review) { %>
+                <p>
+                    <i class="fas fa-quote-left"></i><strong><%= review.author %></strong> - <%= review.text %><i class="fas fa-quote-right"></i>
+                </p>
+            
+            <% }); %>
+        </div>
+    </div>
+</div>
+</div>
+
+<% include ../partials/footer %>

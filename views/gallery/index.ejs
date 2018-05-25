@@ -1,0 +1,29 @@
+<% include ../partials/header %>
+
+
+<div class="parallax-window" data-parallax="scroll" data-image-src="http://www.sftravel.com/sites/sftraveldev.prod.acquia-sites.com/files/field/image/Vietnamese-Food-Jules.jpg"></div>
+<div class="window-block">
+    <div class="window-container">
+        <h1 class="window-title"> Gallery Page </h1>
+        <p>
+            <a class="btn btn-large btn-tan" href="/gallery/new">Add an Image!</a>
+        </p>
+        
+        <div class="divider">
+            <div class="card-deck row">
+                <% images.forEach(function(image) { %>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <img class="card-img-top" src="<%= image.image %>">
+                            <div class="card-body">
+                                <p id="desc"><%= image.description %></p>
+                            </div>
+                        </div>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% include ../partials/footer %>
